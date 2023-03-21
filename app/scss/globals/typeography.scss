@@ -1,0 +1,22 @@
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0;
+  font-family: var(--font-heading);
+  line-height: 1.1;
+}
+
+p {
+  font-family: var(--font-text);
+  color: var(--textGrey);
+  font-size: rem(16);
+  line-height: 1.5;
+
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
