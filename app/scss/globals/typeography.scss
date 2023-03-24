@@ -1,18 +1,48 @@
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   margin-top: 0;
   font-family: var(--font-heading);
+  font-weight: 700;
   line-height: 1.1;
+}
+
+h1 {
+  font-size: rem(75);
+}
+
+h2 {
+  font-size: rem(58);
+}
+
+h3 {
+  font-size: rem(44);
+}
+
+h4 {
+  font-size: rem(34);
+}
+
+h5 {
+  font-size: rem(28); // 20px
 }
 
 p {
   font-family: var(--font-text);
   color: var(--textGrey);
   font-size: rem(16);
+  font-weight: 500;
   line-height: 1.5;
+  margin-bottom: rem(24);
+}
 
+.intro {
+  font-family: var(--font-text);
+  color: var(--textGrey);
+  font-size: rem(22);
+  font-weight: 700;
 }
 
 a,

@@ -1,0 +1,35 @@
+@use '../util' as *;
+
+header {
+  background-color: var(--primaryYellow);
+  width: 100%;
+  position: fixed;
+  z-index: 900;
+  padding: rem(40);
+
+  // Hamburger Open Styles
+  &.open {
+
+      .header__menu {
+          > span:first-child {
+              transform: rotate(45deg);
+          }
+  
+          > span:nth-child(2) {
+              opacity: 0;
+          }
+  
+          > span:last-child {
+          transform: rotate(-45deg); 
+          }
+      }
+      
+  }
+}
+
+
+
+
+
+
+

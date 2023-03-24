@@ -5,15 +5,54 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Document</title>
+  <title>Commercial Sales - Home</title>
+
+  <meta property="og:title" content="Commercial Sales - northerncommercial.ca">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://northerncommercial.ca/">
+  <meta property="og:image" content="">
+
+  <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
 
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Georama:wght@700;800&family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="dist/style.css">
+  <script defer src="dist/script.js"></script>
+
 </head>
+
 <body>
-  Body goes here
+    <!-- HEADER / NAVIGATION SECTION START -->
+    <header class="header header-content" id="header">
+      <div class="overlay has-fade"></div>
+      
+      <nav class="container nav">
+          <a href="index.html"><img class="header__logo" src="img/CommercialSalesLogo_244x54.svg" alt="" width="244" height="54"></a>
+          
+          <div id="btnHamburger" class="nav__toggle header__menu hide-for-desktop">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+          
+          <ul class="nav__list header__links hide-for-mobile mobileMenu">
+              <li class="nav__item"><a href="about.html">About</a></li>
+              <li class="nav__item"><a href="services.html">Services</a></li>
+              <li class="nav__item"><a href="solutions.html">Solutions</a></li>
+              <li class="nav__item"><a href="products.html">Products</a></li>
+              <li class="nav__item--btn"><a class="button btn btn--dark" href="contact.html">Contact</a></li>
+          </ul> <!-- nav__list header__links hide-for-mobile mobileMenu -->
+          
+      </nav>
+  </header>
+  <!-- HEADER / NAVIGATION SECTION END -->
+
+  <div class="container">
+    <h1>Header goes here</h1>
+    Body goes here
+  </div>
 </body>
 </html>
