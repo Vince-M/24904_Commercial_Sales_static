@@ -1,0 +1,67 @@
+@use '../util' as *;
+
+.button {
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.btn {
+  font-family: var(--font-heading);
+
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: rem(1); //1px
+  padding: rem(8) rem(16); // 8px 16px
+  border: 0px;
+  border-radius: 0px;
+  cursor: pointer;
+  letter-spacing: rem(1); // 1px
+
+  &--lc {
+    text-transform: lowercase;
+    font-weight: 300;
+  }
+
+  &--white {
+    background-color: var(--white);
+    border: 1px solid var(--white);
+    color: var(--primaryDkBlue);
+    font-weight: 700;
+    font-size: rem(16); // 16px
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: var(--primaryYellow);
+      color: var(--primaryDkBlue);
+      border: rem(1) solid var(--primaryYellow); // 1px
+      transition: all 300ms ease-in-out;
+    }
+  }
+
+  &--dark {
+    background-color: var(--primaryDkBlue);
+    border: rem(1) solid var(--primaryDkBlue); // 1px
+    color: var(--white);
+    font-weight: 700;
+    font-size: rem(16); // 16px
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: var(--white);
+      color: var(--primaryDkBlue);
+      border: rem(1) solid var(--primaryDkBlue); // 1px
+      transition: all 300ms ease-in-out;
+    }
+    &-footer {
+      font-size: rem(24); // 24px
+      font-weight: 500;
+      padding: rem(10) rem(56); // 10px 56px
+      text-transform: uppercase;
+      letter-spacing: rem(1); // 1px
+      display: block;
+    }
+  }
+}
