@@ -17,19 +17,20 @@ img {
 
 body {
   font-family: var(--font-text);
+  line-height: 1.4;
+  background-color: var(--white);
   margin: 0;
   padding: 0;
-  // background-color: red;
 }
 
 // SPACING
 .container {
-  width: 80%;
-  max-width: em(1200);
-  margin: 0 auto;
   // width: 80%;
-  // width: min(90%, em(1200));
-  // margin-inline: auto;
+  // max-width: em(1200);
+  // margin: 0 auto;
+  width: 80%;
+  width: min(90%, em(1200));
+  margin-inline: auto;
 
   &__content {
     width: 60%;
@@ -97,3 +98,18 @@ body {
     flex-wrap: nowrap;
   }
 }
+
+// Visibility
+.hide-for-mobile {
+    // hide for tablet and mobile devices
+    @include breakpoint-down(medium) {
+      display: none;
+    }
+  }
+  
+  .hide-for-desktop {
+    // hide for desktop viewport widths
+    @include breakpoint(large) {
+      display: none;
+    }
+  }

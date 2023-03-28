@@ -29,28 +29,34 @@
     <header class="header header-content" id="header">
       <div class="overlay has-fade"></div>
       
-      <nav class="container nav">
-          <a href="index.html"><img class="header__logo" src="img/CommercialSalesLogo_244x54.svg" alt="Commercial Sales logo" width="244" height="54"></a>
-          
-          <div id="btnHamburger" class="nav__toggle header__menu hide-for-desktop">
-              <span></span>
-              <span></span>
-              <span></span>
-          </div>
-          
-          <ul class="nav__list header__links hide-for-mobile mobileMenu">
-              <li class="nav__item"><a href="about.html">About</a></li>
-              <li class="nav__item"><a href="products.html">Products</a></li>
-              <li class="nav__item--btn"><a class="button btn btn--dark" href="contact.html">Contact</a></li>
-          </ul> <!-- nav__list header__links hide-for-mobile mobileMenu -->
-          
-      </nav>
+      <div class="container header__section">
+        <nav class="nav">
+            <a href="index.html" class="header__logo"><img src="img/CommercialSalesLogo_244x54.svg" alt="Commercial Sales logo" width="244" height="54"></a>
+            
+            <a id="btnHamburger" class="nav__toggle header__menu hide-for-desktop">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            
+            <ul class="nav__list header__links mobileMenu hide-for-mobile ">
+                <li class="nav__item"><a href="about.html">About</a></li>
+                <li class="nav__item has-submenu"><a tabindex="0">Products <span class="chevron-down">&#8964;</span></a>
+                  <!-- <ul class="submenu">
+                    <li class="subitem"><a href="home_furnishings">Home Furnishings & Appliances</a></li>
+                  </ul> -->
+                </li>
+                <li class="nav__item--btn"><a class="button btn btn--dark" href="contact.html">Contact</a></li>
+            </ul> <!-- nav__list header__links hide-for-mobile mobileMenu -->
+            
+        </nav>
+      </div>
   </header>
   <!-- HEADER / NAVIGATION SECTION END -->
 
   <div class="container">
     <h1>Header goes here</h1>
     Body goes here
-  </div>
+  </div> <!-- container -->
 </body>
 </html>

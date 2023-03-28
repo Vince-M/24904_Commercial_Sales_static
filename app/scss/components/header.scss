@@ -5,7 +5,13 @@ header {
   width: 100%;
   position: fixed;
   z-index: 900;
-  padding: rem(10);
+
+  &__logo {
+
+    img {
+
+    }
+  }
 
   // Hamburger Open Styles
   &.open {
@@ -32,7 +38,8 @@ header {
         right: 0;
         bottom: 0;
         left: 0;
-        // background-image: linear-gradient($primaryYellow, transparent);
+        // background-image: linear-gradient(var(--primaryYellow), transparent);
+        background-color: var(--primaryYellow);
         z-index: 400;
         display: none;
     }
@@ -44,8 +51,11 @@ header {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    padding-top: em(10) 0; // 10px
     z-index: 400;
+
+        @include breakpoint-down(medium) {
+            padding: rem(16) 0;
+        }
 
     // ul {
     //     display: flex;
@@ -56,6 +66,19 @@ header {
         display: flex;
         align-items: center;
         list-style-type: none;
+
+        @include breakpoint-down(medium) {
+            display: none;
+        }
+
+        &--open {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            padding-left: 0;
+            transition: all 300ms ease-in-out;
+          }
     }
 
     &__toggle {
@@ -138,7 +161,7 @@ header {
     justify-content: center;
     top: em(75);
     text-align: center;
-    width: 80%;
+    width: 90%;
     padding-top: em(20);
     padding-left: 0;
     padding-bottom: em(20);
@@ -155,8 +178,7 @@ header {
     // }
 }
 
-
-
-
-
-
+.chevron-down {
+    font-size: rem(18);
+    font-weight: 500;
+}

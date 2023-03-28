@@ -6,7 +6,7 @@ $breakpoints-up: (
   // 43.75em
   "large": em(960),
   // 56.25em
-  "xlarge": em(1440),
+  "xlarge": em(1200),
   // 90em
 );
 
@@ -16,7 +16,7 @@ $breakpoints-down: (
   // 43.7485em
   "medium": em(959.99),
   // 56.24875em
-  "large": em(1439.98),
+  "large": em(1199.99),
   // 89.99875em
 );
 
@@ -30,8 +30,4 @@ $breakpoints-down: (
   @media (max-width: map-get($breakpoints-down, $size)) {
     @content;
   }
-}
-
-a {
-  color: slateblue;
 }
