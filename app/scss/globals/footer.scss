@@ -1,0 +1,6 @@
+@use '../util' as *;
+
+footer {
+  min-height: rem(315);
+  background-color: var(--footerGray);
+}
