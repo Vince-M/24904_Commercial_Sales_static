@@ -3,7 +3,7 @@
 header {
   background-color: var(--primaryYellow);
   width: 100%;
-  position: relative;
+  position: absolute;
   z-index: 900;
 
   &__logo {
