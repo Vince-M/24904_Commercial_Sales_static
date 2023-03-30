@@ -1,1 +1,86 @@
 @use '../util' as *;
+
+.product {
+  &__cards {
+      margin: 4.6875rem auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 1rem;
+
+      @include breakpoint-down(medium) {
+          grid-template-columns: repeat(2, 1fr);
+      }
+  }
+
+  &__card {
+      padding: rem(20) 0 rem(10);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: rem(10) rem(15) rem(10) rem(25);
+      border: 1px solid var(--primaryDkBlue);
+      height: 100%;
+      transition: background-color 300ms ease-in-out,
+                  border 300ms ease-in-out;
+
+      @include breakpoint-down(small) {
+        display: block;
+        padding-left: rem(8); // 8px
+        padding-right: rem(8); // 8px
+      }
+
+      &:hover {
+          background-color: var(--primaryLtBlue);
+          border: 1px solid var(--primaryLtBlue);
+      }
+
+      &--content {
+        display: flex;
+        align-items: center;
+
+        @include breakpoint-down(small) {
+          display: block;
+          text-align: center;
+        }
+
+          p {
+              font-size: 1.125rem; // 18px
+              line-height: 1.2;
+              font-weight: 700;
+              color: var(--primaryDkBlue);
+              margin-bottom: 0;
+          }
+      }
+
+      &--image {
+          max-width: 100%;
+          height: auto;
+          margin-right: 0.9375rem; // 15px
+
+          @include breakpoint-down(small) {
+            margin-right: 0;
+          }
+      }
+  }
+}
+
+.product__card9 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    @include breakpoint-down(medium) {
+        grid-column-start: inherit;
+        grid-column-end: inherit;
+    }
+}
+
+.product__card10 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+    @include breakpoint-down(medium) {
+        grid-column-start: inherit;
+        grid-column-end: inherit;
+    }
+}

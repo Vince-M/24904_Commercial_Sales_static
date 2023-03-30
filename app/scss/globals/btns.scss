@@ -4,6 +4,7 @@
   text-align: center;
   display: inline-block;
   cursor: pointer;
+  font-size: rem(18);
 }
 
 .btn {
@@ -36,8 +37,15 @@
     border: 1px solid var(--white);
     color: var(--primaryDkBlue);
     font-weight: 700;
-    font-size: rem(16); // 16px
 
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: var(--primaryDkBlue);
+      color: var(--white);
+      border: rem(1) solid var(--white); // 1px
+      transition: all 300ms ease-in-out;
+    }
   }
 
   &__dark {
@@ -55,6 +63,7 @@
       border: rem(1) solid var(--primaryDkBlue); // 1px
       transition: all 300ms ease-in-out;
     }
+
     &-footer {
       font-size: rem(24); // 24px
       font-weight: 500;
