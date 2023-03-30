@@ -3,13 +3,13 @@
 header {
   background-color: var(--primaryYellow);
   width: 100%;
-  position: fixed;
+  position: relative;
   z-index: 900;
 
   &__logo {
 
     img {
-
+        padding: rem(10) 0;
     }
   }
 
@@ -52,6 +52,7 @@ header {
     align-items: center;
     position: relative;
     z-index: 400;
+    padding: rem(10) 0 rem(5);
 
         @include breakpoint-down(medium) {
             padding: rem(16) 0;
@@ -66,6 +67,8 @@ header {
         display: flex;
         align-items: center;
         list-style-type: none;
+        padding: 0;
+        margin: 0;
 
         @include breakpoint-down(medium) {
             display: none;
@@ -102,10 +105,12 @@ header {
     }
 
     &__item a {
+        font-family: var(--font-heading);
+        font-size: rem(18);
         color: var(--primaryDkBlue);
         text-transform: uppercase;
         font-weight: 400;
-        letter-spacing: em(1); // 1px
+        letter-spacing: rem(1); // 1px
         cursor: pointer;
         position: relative;
         margin-left: em(30); // 30px
@@ -144,7 +149,7 @@ header {
       }
 
       &__item--btn {
-          margin-left: rem(35); // 35px
+          margin-left: rem(35);
 
           @include breakpoint-down(medium) {
               margin-left: 0px;
@@ -170,8 +175,6 @@ header {
 
 .nav__item,
 .nav__item--btn {
-    padding-top: em(10);
-    padding-bottom: em(10);
 
     // &:nth-child(1) {
     //     margin-top: 0;
@@ -180,5 +183,9 @@ header {
 
 .chevron-down {
     font-size: rem(18);
-    font-weight: 500;
+    font-weight: 700;
+}
+
+li.nav__item:first-child a {
+    margin-left: 0;
 }
