@@ -2,5 +2,37 @@
 
 footer {
   min-height: rem(315);
-  background-color: var(--footerGray);
+  background-color: var(--footerGrey);
+}
+
+.footer {
+  padding-top: rem(40);
+
+  &__logo {
+    margin-bottom: rem(20);
+  }
+
+  &__contact {
+    color: var(--textGrey);
+
+    a {
+      color: var(--textGrey);
+    }
+  }
+}
+
+.site {
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    padding: 0 rem(20);
+
+    @include breakpoint-down(small) {
+      flex-direction: column;
+    }
+  }
 }

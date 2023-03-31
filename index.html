@@ -15,9 +15,9 @@
   <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
 
   <!-- Google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Georama:wght@700;800&family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Georama:wght@700;900&family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    </style> 
 
   <link rel="stylesheet" href="dist/style.css">
   <script defer src="dist/script.js"></script>
@@ -39,40 +39,46 @@
                 <span></span>
                 <span></span>
                 <span></span>
-            </a>
+            </a> <!-- nav__toggle header__menu hide-for-desktop -->
             
             <ul class="nav__list header__links mobileMenu hide-for-mobile ">
-                <li class="nav__item"><a href="about.html">About</a></li>
+                <li class="nav__item"><a href="about.html">About</a></li> <!-- nav__item -->
                 <li class="nav__item has-submenu"><a tabindex="0">Products <span class="chevron-down">&#8964;</span></a>
                   <!-- <ul class="submenu">
                     <li class="subitem"><a href="home_furnishings">Home Furnishings & Appliances</a></li>
                   </ul> -->
-                </li>
+                </li> <!-- nav__item has-submenu -->
 
-
-                <li class="nav__item--btn"><button class="button btn btn__dark nav__item--btn"><a href="contact.html">Contact</a></button></li>
+                <li class="nav__item--btn"><button class="button btn btn--dark nav__item--btn"><a href="contact.html">Contact</a></button></li>
                 <!-- <li class="nav__item--btn"><a class="button btn btn--dark" href="contact.html">Contact</a></li> -->
             </ul> <!-- nav__list header__links hide-for-mobile mobileMenu -->
 
             
-        </nav>
-      </div>
+        </nav> <!-- nav -->
+      </div> <!-- container header__section -->
+
     </header> <!-- HEADER / NAVIGATION SECTION END -->
     <!-- ============================================== -->
 
     <!-- HERO
     =================================================== -->
     <section class="hero feature">
-      <div class="hero__index--headline"></div>
-      <div
-        class="hero__index"
-        style="
+
+        <div class="hero__index" style="
           background: url('img/HERO_index_1920x1080-min.jpg') no-repeat;
           background-position: top;
-          background-size: cover;
-        "
-      ></div>
-    </section>
+          background-size: cover;" >
+                <div class="hero__index--headline">
+                  <h1 class="hero__index--headline">We're Here to Help!</h1>
+                  <h4 class="hero__index--subhead">Delivering large-scale orders to your Community.</h4>
+                  <a href="contact.html"><button class="button btn btn--yellow">Find Out How</button></a>
+
+                  <section class="header-down-arrow">
+                    <img src="img/downarrow.svg" width="50" alt="">
+                  </section> <!-- header-down-arrow -->
+                </div>
+        </div> <!-- hero__index -->
+    </section> <!-- hero feature -->
     <!-- ============================================== -->
 
     <!-- BULK ORDER
@@ -82,21 +88,19 @@
         <p class="bulk__intro">
           The Commercial Sales Division at NWC offers value pricing on your large scale orders. As logistical experts in the North, we pride ourselves on delivering a huge selection of goods to remote and rural communities.
         </p>
-      </section>
+      </section> <!-- index__bulkOrder container -->
     <!-- ============================================== -->
 
     <!-- PRODUCTS
     =================================================== -->
-    <section class="indexProducts index__fullWidth">
-
+      <section class="indexProducts index__fullWidth">
         <div class="container index__fullWidth--text">
           <h2 class="index__fullWidth--head">Products</h2>
           <h5 class="index__fullWidth--subHead">From Groceries to General Merchandise.</h5>
           <h6 class="index__fullWidth--subText">Get in touch with Commercial Sales to see what products best fit your needs</h6>
-          <button class="button btn btn--white">Contact</button>
-        </div>
-
-    </section>
+          <a href="contact.html"><button class="button btn btn--white">Contact</button></a>
+        </div> <!-- container index__fullWidth--text -->
+      </section> <!-- indexProducts index__fullWidth -->
     <!-- ============================================== -->
 
     <!-- PRODUCT GRID
@@ -191,18 +195,9 @@
           </div> <!-- product__card -->
         </a>
 
-        <a href="#" class="product__card9">
-          <div class="product__card">
-            <div class="product__card--content">
-              <div class="product__card--image">
-                <img src="img/icon_specialOrder_82x69.svg" alt="Products - Special Orders" width="82" height="69">
-              </div> <!-- product__card--image -->
-              <p>special orders</p>
-            </div> <!-- product__card--content -->
-          </div><!-- product__card -->
-        </a>
 
-        <a href="#" class="product__card10">
+
+        <a href="#" class="product__card9">
           <div class="product__card">
             <div class="product__card--content">
               <div class="product__card--image">
@@ -218,19 +213,16 @@
     <!-- SOLUTIONS
     =================================================== -->
     <section class="indexSolutions index_fullWidth">
-
-<div class="solutionsText">
-  <div class="container index__fullWidth--solutions">
-    <h2 class="indexSolutions__head">Solutions</h2>
-    <h5 class="indexSolutions__subHead">300+ years of experience shipping products to the north.</h5>
-    <h6 class="indexSolutions__subText">Reach out to the Commercial Sales team, see what solution would be most suitable for you.</h6>
-    <button class="button btn btn--dark">Contact</button>
-  </div> <!-- ourCustomers__pullOut--text -->
-  <div class="indexSolutions__background"></div> <!-- ourCustomers__pullOut -->
-</div>
-
-
-    </section>
+      <div class="solutionsText">
+        <div class="container index__fullWidth--solutions">
+          <h2 class="indexSolutions__head">Solutions</h2>
+          <h5 class="indexSolutions__subHead">300+ years of experience shipping products to the north.</h5>
+          <h6 class="indexSolutions__subText">Reach out to the Commercial Sales team, see what solution would be most suitable for you.</h6>
+          <a href="contact.html"><button class="button btn btn--dark">Contact</button></a>
+        </div> <!-- ourCustomers__pullOut--text -->
+        <div class="indexSolutions__background"></div> <!-- ourCustomers__pullOut -->
+      </div><!-- solutionsText -->
+    </section> <!-- indexSolutions index_fullWidth -->
     <!-- ============================================== -->
 
     <!-- TRANSPORT
@@ -252,8 +244,47 @@
     =================================================== -->
       <footer class="footer">
         <div class="container">
-          <h1>Header goes here</h1>
-          footer text
+          <div class="footer__branding">
+            <div class="footer__logo">
+              <img src="img/CommercialSalesLogo_244x54.svg" alt="" width="275">
+            </div>
+            <div class="footer__contact">
+              <a href="tel:204-934-1471">Phone: (204) 934.1471</a><br>
+              <a href="fax:204-934-1685">Fax Order: (204) 934.1685</a><br>
+              Email: <a href="mailto:contractsales@northwest.ca">contractsales@northwest.ca</a><br>
+              77 Main Street, Winnipeg MB  R3C 2R1
+            </div>
+          </div>
+          <div class="footer__nav">
+            <ul>
+              <li>About</li>
+              <li>Products
+                <ul>
+                  <li>Home Furnishings & Appliances</li>
+                  <li>Office Supplies & Furniture</li>
+                  <li>Cleaning & Janitorial Supplies</li>
+                  <li>School Supplies & Sporting Equipment</li>
+                  <li>Housewares</li>
+                  <li>Lumber & Building Supplies</li>
+                  <li>Bulk Food Orders</li>
+                  <li>Transportation Vehicles</li>
+                  <li>Community Events & Fireworks</li>
+                </ul>
+              </li>
+              <li class="nav__item--btn"><button class="button btn btn--dark nav__item--btn"><a href="contact.html">Contact</a></button></li>
+            </ul>
+
+          </div>
+
+        <div class="site__info">
+          <div class="copyright">
+            <p>Copyright © 2021 The North West Company</p>
+          </div>
+          <div class="legal">
+            <a href="#">Privacy</a> | <a href="#">Terms & Conditions</a>
+          </div>
+        </div>
+
         </div> <!-- container -->
       </footer>
     <!-- ============================================== -->

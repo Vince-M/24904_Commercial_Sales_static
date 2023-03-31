@@ -23,7 +23,7 @@
 
   a:hover {
     color: var(--primaryDkBlue);
-    transition: all 300ms ease-in-out;
+    transition: all 200ms ease-in-out;
   }
 
   &--lc {
@@ -57,7 +57,7 @@
     &:active,
     &:focus {
       background-color: var(--white);
-      color: var(--primaryDkBlue);
+      // color: var(--primaryDkBlue);
       border: rem(1) solid var(--primaryDkBlue); // 1px
       transition: all 300ms ease-in-out;
     }
@@ -69,6 +69,22 @@
       text-transform: uppercase;
       letter-spacing: rem(1); // 1px
       display: block;
+    }
+  }
+
+  &--yellow {
+    background-color: var(--primaryYellow);
+    border: rem(1) solid var(--primaryYellow);
+    color: var(--primaryDkBlue);
+    font-weight: 700;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: var(--white);
+      // color: var(--primaryDkBlue);
+      border: rem(1) solid var(--primaryYellow); // 1px
+      transition: all 300ms ease-in-out;
     }
   }
 

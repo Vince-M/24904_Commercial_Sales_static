@@ -37,6 +37,7 @@
 
       &--content {
         display: flex;
+        justify-content: center;
         align-items: center;
 
         @include breakpoint-down(small) {
@@ -49,7 +50,7 @@
               line-height: 1.2;
               font-weight: 700;
               color: var(--primaryDkBlue);
-              margin-bottom: 0;
+              margin: 0;
           }
       }
 
@@ -66,8 +67,8 @@
 }
 
 .product__card9 {
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
 
     @include breakpoint-down(medium) {
         grid-column-start: inherit;
