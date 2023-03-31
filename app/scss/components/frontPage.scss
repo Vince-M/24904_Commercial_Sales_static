@@ -73,6 +73,25 @@
       }
     }
 
+    &--solutions {
+      width: 45%;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 53%;
+      text-align: center;
+      z-index: 900;
+      // margin-top: rem(40);
+
+      @include breakpoint-down(medium) {
+        width: 100%;
+      }
+
+      @include breakpoint-down(small) {
+        top: 40%;
+      }
+    }
+
     &--head,
     &--subHead,
     &--subText {
@@ -96,15 +115,19 @@
   }
 }
 
+.indexProducts,
+.indexSolutions {
+  background-position: center;
+  background-size: cover;
+  margin-bottom: rem(40);
+  margin-left: auto;
+}
+
 
 .indexProducts {
   background: url("/img/index_products_1920x700-min.jpg") no-repeat;
-  background-position: center;
+  background-position: top;
   background-size: cover;
-  // height: 35.9375rem; // 575px
-  // // margin-top: 50px;
-  margin-bottom: rem(40);
-  margin-left: auto;
 
   @include breakpoint-down(small) {
     background-color: var(--primaryDkBlue);
@@ -112,5 +135,52 @@
   }
 }
 
+.indexSolutions {
+  background: url("/img/index_solutions_1920x775-min.jpg") no-repeat;
+  background-position: top;
+  background-size: cover;
+  padding-top: rem(275);
+  margin-bottom: rem(60);
+  color: var(--darkBlue);
+  position: relative;
+
+  &__background {
+    position: relative;
+    height: rem(300);
+    background-color: var(--primaryYellow_60);
+
+    @include breakpoint-down(small) {
+      height: rem(375);
+    }
+  }
+
+  @include breakpoint-down(small) {
+    background-color: var(--primaryYellow);
+    padding-top: rem(200);
+  }
+
+  &__head {
+    margin-bottom: rem(5);
+  }
+
+  &__subHead {
+    line-height: 1;
+    margin-bottom: rem(15);
+
+    @include breakpoint-down(small) {
+      width: 90%;
+      margin: 0 auto rem(10);
+    }
+  }
+
+  &__subText {
+    margin: 0 auto rem(30);
+    width: 65%;
+
+    @include breakpoint-down(small) {
+      width: 90%;
+    }
+  }
+}
 
 
