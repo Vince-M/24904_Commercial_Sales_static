@@ -15,9 +15,9 @@
   <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
 
   <!-- Google fonts -->
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Georama:wght@700;900&family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-    </style> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Georama:wght@400;700;900&family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
 
   <link rel="stylesheet" href="dist/style.css">
   <script defer src="dist/script.js"></script>
@@ -25,7 +25,7 @@
 </head>
 
 <body>
-    <!-- HEADER / NAVIGATION SECTION START -->
+
     <!-- HEADER / NAVIGATION SECTION START
     =================================================== -->
     <header class="header header-content" id="header">
@@ -41,17 +41,28 @@
                 <span></span>
             </a> <!-- nav__toggle header__menu hide-for-desktop -->
             
-            <ul class="nav__list header__links mobileMenu hide-for-mobile ">
+              <ul class="menu nav__list mobileMenu hide-for-mobile">
                 <li class="nav__item"><a href="about.html">About</a></li> <!-- nav__item -->
                 <li class="nav__item has-submenu"><a tabindex="0">Products <span class="chevron-down">&#8964;</span></a>
-                  <!-- <ul class="submenu">
+                  <ul class="submenu">
                     <li class="subitem"><a href="home_furnishings">Home Furnishings & Appliances</a></li>
-                  </ul> -->
+                    <li class="subitem"><a href="#">Office Supplies & Furniture</a></li>
+                    <!-- <li class="subitem"><a href="#">Cleaning & Janitorial Supplies</a></li>
+                    <li class="subitem"><a href="#">School Supplies & Sporting Equipment</a></li>
+                    <li class="subitem"><a href="#">Housewares</a></li>
+                    <li class="subitem"><a href="#">Lumber & Building Supplies</a></li>
+                    <li class="subitem"><a href="#">Bulk Food Orders</a></li>
+                    <li class="subitem"><a href="#">Transportation Vehicles</a></li>
+                    <li class="subitem"><a href="#">Community Events & Fireworks</a></li> -->
+                  </ul>
                 </li> <!-- nav__item has-submenu -->
 
-                <li class="nav__item--btn"><button class="button btn btn--dark nav__item--btn"><a href="contact.html">Contact</a></button></li>
-                <!-- <li class="nav__item--btn"><a class="button btn btn--dark" href="contact.html">Contact</a></li> -->
-            </ul> <!-- nav__list header__links hide-for-mobile mobileMenu -->
+                <li class="nav__item--btn"><a class="button btn btn--dark" href="contact.html">Contact</a></li>
+              </ul> <!-- nav__list header__links hide-for-mobile mobileMenu -->
+
+            <!-- <button class="button btn btn--dark nav__item--btn hide-for-mobile"><a href="contact.html" class="btn__cta">Contact</a></button> -->
+
+
 
             
         </nav> <!-- nav -->
@@ -218,7 +229,7 @@
           <h2 class="indexSolutions__head">Solutions</h2>
           <h5 class="indexSolutions__subHead">300+ years of experience shipping products to the north.</h5>
           <h6 class="indexSolutions__subText">Reach out to the Commercial Sales team, see what solution would be most suitable for you.</h6>
-          <a href="contact.html"><button class="button btn btn--dark">Contact</button></a>
+          <button class="button btn btn--dark"><a href="contact.html" class="btn__contact">Contact</a></button>
         </div> <!-- ourCustomers__pullOut--text -->
         <div class="indexSolutions__background"></div> <!-- ourCustomers__pullOut -->
       </div><!-- solutionsText -->

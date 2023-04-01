@@ -40,7 +40,7 @@ btnHamburger.addEventListener('click', function() {
         overlay.classList.remove('fade-out');
         nav__list.classList.add('fade-in');
         mobileMenu.classList.add('nav-open');
-        // mobileMenu.classList.remove('hide-for-mobile');
+        mobileMenu.classList.remove('hide-for-mobile');
         nav__item.classList.add('nav__item--open');
     }
 });

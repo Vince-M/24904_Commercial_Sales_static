@@ -1,10 +1,19 @@
 @use '../util' as *;
 
-.button {
+button .button {
   text-align: center;
   display: inline-block;
   cursor: pointer;
   font-size: rem(18);
+
+  a {
+    color: white;
+  }
+
+  a:hover {
+    color: var(--primaryDkBlue);
+    transition: all 200ms ease-in-out;
+  }
 }
 
 .btn {
@@ -16,8 +25,10 @@
   border-radius: rem(5);
   cursor: pointer;
   letter-spacing: rem(1); // 1px
+  font-size: rem(18);
 
-  a {
+  &__cta,
+  &__contact {
     color: white;
   }
 
