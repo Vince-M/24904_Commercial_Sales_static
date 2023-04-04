@@ -68,7 +68,7 @@ button .button {
     &:active,
     &:focus {
       background-color: var(--white);
-      // color: var(--primaryDkBlue);
+      color: var(--primaryDkBlue);
       border: rem(1) solid var(--primaryDkBlue); // 1px
       transition: all 300ms ease-in-out;
     }
@@ -93,11 +93,20 @@ button .button {
     &:active,
     &:focus {
       background-color: var(--white);
-      // color: var(--primaryDkBlue);
+      color: var(--primaryDkBlue);
       border: rem(1) solid var(--primaryYellow); // 1px
       transition: all 300ms ease-in-out;
     }
   }
+}
 
+.nav__item--btn,
+.footer__item--btn {
+  margin-left: rem(35);
+  background-color: transparent;
+  border: none;
 
+  @include breakpoint-down(medium) {
+      margin-left: 0px;
+  }
 }
