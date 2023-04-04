@@ -26,6 +26,10 @@
       color: var(--white);
       font-weight: 900;
       margin-bottom: rem(25);
+
+      @include breakpoint-down(small) {
+        font-size: rem(58);
+      }
     }
 
     &--subhead {

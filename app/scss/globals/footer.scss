@@ -123,6 +123,6 @@ footer {
   margin: 0;
 
   @include breakpoint-down(small) {
-    margin-bottom: rem(20);
+    padding-bottom: rem(20);
   }
 }
