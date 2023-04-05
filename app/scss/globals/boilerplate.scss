@@ -17,6 +17,7 @@ img {
 
 body {
   font-family: var(--font-text);
+  color: var(--textGrey);
   line-height: 1.4;
   background-color: var(--white);
   margin: 0;
@@ -51,7 +52,42 @@ body {
 }
 
 .row {
-  padding: 0 rem(20);
+
+  @include breakpoint-down(medium) {
+    padding: 0 rem(20);
+  }
+}
+
+// .fullWidth__image {
+
+// }
+
+.cta {
+  padding: rem(40) 0;
+  background-color: var( --primaryYellow);
+  margin-bottom: rem(60);
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+  }
+
+  &__pullBanner {
+    font-family: var(--font-heading);
+    font-size: rem(44);
+    color: var(--primaryDkBlue);
+    width: 90%;
+    margin: 0 auto rem(40);
+    text-align: center;
+  }
+}
+
+.section-divider {
+  border: rem(1) solid var(--primaryMedBlue);
+  margin: rem(80) auto rem(60);
 }
 
 // Flexbox

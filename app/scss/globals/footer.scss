@@ -78,6 +78,14 @@ footer {
       & li {
         margin-bottom: rem(15);
       }
+
+      a {
+        color: var(--primaryDkBlue);
+      }
+
+      a:hover {
+        color: var(--white);
+      }
     }
 
     &--submenu {
@@ -105,6 +113,7 @@ footer {
 .site {
 
   &__info {
+    font-size: rem(14);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -124,5 +133,17 @@ footer {
 
   @include breakpoint-down(small) {
     padding-bottom: rem(20);
+  }
+}
+
+.legal {
+
+  a {
+    color: var(--primaryDkBlue);
+  }
+
+  & a:hover {
+    color: var(--white);
+    text-decoration: underline;
   }
 }
