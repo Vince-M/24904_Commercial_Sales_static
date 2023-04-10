@@ -92,13 +92,14 @@
 .product {
 
     &__head {
+        font-family: var(--font-heading);
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         margin: 0 auto;
     
-        @include breakpoint-down(medium) {
+        @include breakpoint-down(small) {
             flex-direction: column;
             padding: 0;
         }
@@ -112,15 +113,21 @@
         margin-bottom: 0;
     
         @include breakpoint-down(medium) {
-            font-size: rem(48);
+            font-size: rem(38);
         }
+        
+        @include breakpoint-down(small) {
+            font-size: rem(38);
+        }
+
+
     }
 
     &__icon{
         margin-right: 25px;
 
         @include breakpoint-down(medium) {
-            margin: 0;
+            margin: 15;
         }
     }
 
@@ -128,7 +135,8 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: center;
+        margin-bottom: rem(40);
+        // align-items: center;
 
         @include breakpoint-down(small) {
             flex-direction: column;
@@ -145,6 +153,16 @@
         &--left,
         &--right {
             flex: 1;
+        }
+
+        &--left {
+
+            ul li:last-child {
+
+                @include breakpoint-down(small) {
+                    margin-bottom: 0;
+                }
+            }
         }
     }
 }

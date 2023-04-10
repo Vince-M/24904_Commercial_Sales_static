@@ -24,7 +24,7 @@
     }
 
     @include breakpoint-down(small) {
-      font-size: rem(52);
+      font-size: rem(48);
     }
   }
 
@@ -162,7 +162,12 @@
 .customers {
 
   &__map {
-    margin: 0;
+    // margin: 0;
+    background-image: url(../img/customers_map_1200x400-min.jpg);
+    min-height: rem(400);
+    background-repeat: none;
+    background-position: center center;
+    background-size: cover;
   }
 
   &__include {
