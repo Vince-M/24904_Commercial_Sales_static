@@ -129,6 +129,10 @@
         @include breakpoint-down(medium) {
             margin: 15;
         }
+
+        @include breakpoint-down(small) {
+            margin: 0;
+        }
     }
 
     &__list {
