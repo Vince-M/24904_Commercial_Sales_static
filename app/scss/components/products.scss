@@ -85,3 +85,94 @@
         grid-column-end: inherit;
     }
 }
+
+
+
+// PRODUCT PAGE STYLES
+.product {
+
+    &__head {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    
+        @include breakpoint-down(medium) {
+            flex-direction: column;
+            padding: 0;
+        }
+    }
+
+    &__heading {
+        font-family: var(--font-heading);
+        font-size: rem(58);
+        color: var(--primaryDkBlue);
+        text-align: center;
+        margin-bottom: 0;
+    
+        @include breakpoint-down(medium) {
+            font-size: rem(48);
+        }
+    }
+
+    &__icon{
+        margin-right: 25px;
+
+        @include breakpoint-down(medium) {
+            margin: 0;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        @include breakpoint-down(small) {
+            flex-direction: column;
+        }
+
+        ul {
+
+
+            li {
+                margin-bottom: rem(30);
+            }
+        }
+
+        &--left,
+        &--right {
+            flex: 1;
+        }
+    }
+}
+
+.productsList {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: rem(40);
+
+    @include breakpoint-down(small) {
+        margin-bottom: rem(20);
+    }
+}
+
+.productImages {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    @include breakpoint-down(small) {
+        flex-direction: column;
+    }
+}
+
+.productImage {
+    flex: 1;
+}

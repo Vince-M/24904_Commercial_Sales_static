@@ -15,6 +15,7 @@
     width: 60%;
     text-align: center;
     padding: rem(20) 0;
+    margin-bottom: rem(40);
 
     @include breakpoint-down(medium) {
       font-size: rem(60);
