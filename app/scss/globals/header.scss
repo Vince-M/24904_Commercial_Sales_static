@@ -3,14 +3,20 @@
 header {
   background-color: var(--primaryYellow);
   width: 100%;
-  position: absolute;
+  // position: absolute;
   z-index: 900;
 
     &__logo {
 
+
         img {
             padding: rem(10) 0;
         }
+    }
+
+    &__branding {
+      margin-top: rem(100);
+      padding: 0 rem(10);
     }
 
     // Hamburger Open Styles
@@ -46,6 +52,16 @@ header {
     }
 }
 
+.site-branding {
+  background-color: var(--primaryDkBlue);
+  box-shadow: 0 0 rem(10) var(--black);
+
+  img {
+    margin-top: rem(100);
+    padding: 0 rem(10);
+  }
+}
+
 .nav {
     display: flex;
     flex-direction: row;
@@ -53,8 +69,10 @@ header {
     align-items: center;
     position: relative;
     z-index: 400;
-    padding: rem(10) 0 rem(5);
-    background-color: var(--primaryYellow);
+    max-height: rem(75);
+    overflow: visible;
+    // padding: rem(10) 0 rem(5);
+    // background-color: var(--primaryYellow);
 
         @include breakpoint-down(medium) {
             padding: rem(10) 0;
@@ -302,7 +320,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    top: em(75);
+    top: em(105);
     text-align: center;
     width: 100%;
     // width: calc(100% - rem(48));
