@@ -157,7 +157,7 @@ header {
         font-size: rem(16);
         color: var(--primaryDkBlue);
         text-transform: uppercase;
-        font-weight: 400;
+        // font-weight: 400;
         letter-spacing: rem(1); // 1px
         cursor: pointer;
         position: relative;
@@ -244,7 +244,7 @@ header {
     color: var(--white);
     width: 100%;
     margin: 0;
-    padding: rem(8) 0 0 rem(20);
+    padding: rem(8) rem(16) 0 rem(16);
 
     @include breakpoint-down(medium) {
       padding-left: 0;

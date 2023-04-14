@@ -31,43 +31,38 @@
     <header class="header masthead">
       <div class="overlay has-fade"></div>
       
-      <div class="container header__section">
-        <nav class="nav">
-          <div class="header__logo site-branding">
-            <a href="index.html"><img src="img/CommercialSalesLogo_244x54_rev.svg" alt="Commercial Sales logo" width="225"></a>
-          </div> <!-- header__logo -->
-            
-            <a id="btnHamburger" class="nav__toggle header__menu hide-for-desktop" href="#">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a> <!-- nav__toggle header__menu hide-for-desktop -->
-            
-              <ul class="menu nav__list mobileMenu hide-for-mobile">
-                <li class="nav__item"><a href="about.html">About</a></li> <!-- nav__item -->
-                <li class="nav__item has-submenu"><a tabindex="0">Products <span class="chevron-down">&#8964;</span></a>
-                  <ul class="submenu">
-                    <li class="subitem"><a href="home_furnishings.html">Home Furnishings & Appliances</a></li>
-                    <li class="subitem"><a href="#">Office Supplies & Furniture</a></li>
-                    <li class="subitem"><a href="#">Cleaning & Janitorial Supplies</a></li>
-                    <li class="subitem"><a href="#">School Supplies & Sporting Equipment</a></li>
-                    <li class="subitem"><a href="#">Housewares</a></li>
-                    <li class="subitem"><a href="#">Lumber & Building Supplies</a></li>
-                    <li class="subitem"><a href="#">Bulk Food Orders</a></li>
-                    <li class="subitem"><a href="#">Transportation Vehicles</a></li>
-                    <li class="subitem"><a href="#">Community Events & Fireworks</a></li>
-                  </ul>
-                </li> <!-- nav__item has-submenu -->
-
-                <button class="nav__item--btn"><a class="button btn btn--dark" href="contact.html">Contact</a></button>
-              </ul> <!-- nav__list header__links hide-for-mobile mobileMenu -->
-
-            <!-- <button class="button btn btn--dark nav__item--btn hide-for-mobile"><a href="contact.html" class="btn__cta">Contact</a></button> -->
-
-
-
-            
-        </nav> <!-- nav -->
+      <div class="container header__section row">
+          <nav class="nav" aria-label="Site">
+            <div class="header__logo site-branding">
+              <a href="index.html"><img src="img/CommercialSalesLogo_244x54_rev.svg" alt="Commercial Sales logo" width="225"></a>
+            </div> <!-- header__logo -->
+              
+              <a id="btnHamburger" class="nav__toggle header__menu hide-for-desktop" href="#">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </a> <!-- nav__toggle header__menu hide-for-desktop -->
+              
+                <ul class="menu nav__list mobileMenu hide-for-mobile" role="list">
+                  <li class="nav__item" role="presentation"><a role="menuitem" href="about.html" aria-current="true">About</a></li> <!-- nav__item -->
+                  <li class="nav__item has-submenu"><a tabindex="0">Products <span class="chevron-down">&#8964;</span></a>
+                    <ul class="submenu">
+                      <li class="subitem"><a role="menuitem" href="home_furnishings.html">Home Furnishings & Appliances</a></li>
+                      <li class="subitem"><a role="menuitem" href="#">Office Supplies & Furniture</a></li>
+                      <li class="subitem"><a role="menuitem" href="#">Cleaning & Janitorial Supplies</a></li>
+                      <li class="subitem"><a role="menuitem" href="#">School Supplies & Sporting Equipment</a></li>
+                      <li class="subitem"><a role="menuitem" href="#">Housewares</a></li>
+                      <li class="subitem"><a role="menuitem" href="#">Lumber & Building Supplies</a></li>
+                      <li class="subitem"><a role="menuitem" href="#">Bulk Food Orders</a></li>
+                      <li class="subitem"><a role="menuitem" href="#">Transportation Vehicles</a></li>
+                      <li class="subitem"><a role="menuitem" href="#">Community Events & Fireworks</a></li>
+                    </ul>
+                  </li> <!-- nav__item has-submenu -->
+  
+                  <button class="nav__item--btn"><a class="button btn btn--dark" href="contact.html" role="button">Contact</a></button>
+                </ul> <!-- nav__list header__links hide-for-mobile mobileMenu -->
+  
+          </nav> <!-- nav -->
       </div> <!-- container header__section -->
 
     </header> <!-- HEADER / NAVIGATION SECTION END -->
