@@ -57,7 +57,7 @@ header {
   box-shadow: 0 0 rem(10) var(--black);
 
   img {
-    margin-top: rem(100);
+    margin: rem(150) 0 rem(10);
     padding: 0 rem(10);
   }
 }
@@ -81,12 +81,14 @@ header {
     &__list {
         display: flex;
         align-items: center;
+        gap: rem(30);
         list-style-type: none;
         padding: 0;
         margin: 0;
 
         @include breakpoint-down(medium) {
             display: none;
+            gap: 0;
         }
 
         &--open {
@@ -159,7 +161,7 @@ header {
         letter-spacing: rem(1); // 1px
         cursor: pointer;
         position: relative;
-        margin-left: em(30); // 30px
+        // margin-left: em(30); // 30px
         transition: color .2s ease-out;
         padding: rem(16) 0;
 
@@ -320,7 +322,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    top: em(105);
+    top: em(150);
     text-align: center;
     width: 100%;
     // width: calc(100% - rem(48));
